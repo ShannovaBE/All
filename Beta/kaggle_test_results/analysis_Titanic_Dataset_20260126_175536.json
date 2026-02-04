@@ -1,0 +1,46 @@
+{
+  "dataset": "Titanic Dataset",
+  "total_files": 1,
+  "successful": 0,
+  "errors": 1,
+  "average_confidence": 0,
+  "category_distribution": {
+    "CREATIVE/MEDIA": 1
+  },
+  "sample_results": [
+    {
+      "file_path": "/Users/benjaminfalkenburg/Documents/Shannova/Beta/kaggle_test_results/titanic/train_and_test2.csv",
+      "file_name": "train_and_test2.csv",
+      "file_size_bytes": 83879,
+      "file_size_mb": 0.08,
+      "file_type": "tabular",
+      "content_category": "CREATIVE/MEDIA",
+      "confidence": 0.4808360636234283,
+      "classification_time_ms": 377.74,
+      "total_processing_time_ms": 378.02,
+      "timestamp": "2026-01-26T17:55:36.271510",
+      "model_used": "DistilRoBERTa",
+      "status": "success",
+      "processing_time_ms": 377.68,
+      "num_columns": 28,
+      "num_rows": 50,
+      "column_names": [
+        "Passengerid",
+        "Age",
+        "Fare",
+        "Sex",
+        "sibsp",
+        "zero",
+        "zero.1",
+        "zero.2",
+        "zero.3",
+        "zero.4"
+      ],
+      "detected_keywords": {},
+      "text_classification": "CREATIVE/MEDIA",
+      "text_confidence": 0.6869086623191833,
+      "error": null
+    }
+  ],
+  "timestamp": "2026-01-26T17:55:36.271765"
+}

@@ -1,0 +1,6 @@
+patient_id,age,gender,diagnosis,treatment,admission_date,discharge_date,outcome
+P001,45,M,Hypertension,Lisinopril,2023-01-10,2023-01-12,Improved
+P002,62,F,Diabetes Type 2,Metformin,2023-02-15,2023-02-18,Stable
+P003,38,M,Asthma,Albuterol,2023-03-22,2023-03-23,Resolved
+P004,55,F,Arthritis,Ibuprofen,2023-04-05,2023-04-07,Managed
+P005,29,M,Migraine,Sumatriptan,2023-05-12,2023-05-12,Improved

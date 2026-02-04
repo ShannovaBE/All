@@ -1,0 +1,149 @@
+{
+  "dataset": "YouTube Trending Videos",
+  "total_files": 4,
+  "successful": 0,
+  "errors": 4,
+  "average_confidence": 0,
+  "category_distribution": {
+    "HEALTH/MEDICAL": 4
+  },
+  "sample_results": [
+    {
+      "file_path": "/Users/benjaminfalkenburg/Documents/Shannova/Beta/kaggle_test_results/youtube-new/IN_category_id.json",
+      "file_name": "IN_category_id.json",
+      "file_size_bytes": 8225,
+      "file_size_mb": 0.01,
+      "file_type": "text",
+      "content_category": "HEALTH/MEDICAL",
+      "confidence": 0.5264521241188049,
+      "classification_time_ms": 1100.1,
+      "total_processing_time_ms": 1101.19,
+      "timestamp": "2026-01-24T01:05:22.766995",
+      "model_used": "DistilRoBERTa",
+      "status": "success",
+      "processing_time_ms": 1098.75,
+      "top_3_categories": [
+        [
+          "HEALTH/MEDICAL",
+          0.5264521241188049
+        ],
+        [
+          "FINANCIAL",
+          0.4143347442150116
+        ],
+        [
+          "GENERAL/OTHER",
+          0.4015660881996155
+        ]
+      ],
+      "text_preview": "{\n \"kind\": \"youtube#videoCategoryListResponse\",\n \"etag\": \"\\\"XI7nbFXulYBIpL0ayR_gDh3eu1k/1v2mrzYSYG6onNLt2qTj13hkQZk\\\"\",\n \"items\": [\n  {\n   \"kind\": \"youtube#videoCategory\",\n   \"etag\": \"\\\"XI7nbFXulYBIpL...",
+      "was_truncated": true,
+      "text_length": 3000,
+      "error": null,
+      "extracted_text_length": 3000
+    },
+    {
+      "file_path": "/Users/benjaminfalkenburg/Documents/Shannova/Beta/kaggle_test_results/youtube-new/RU_category_id.json",
+      "file_name": "RU_category_id.json",
+      "file_size_bytes": 8225,
+      "file_size_mb": 0.01,
+      "file_type": "text",
+      "content_category": "HEALTH/MEDICAL",
+      "confidence": 0.5264521241188049,
+      "classification_time_ms": 363.18,
+      "total_processing_time_ms": 363.73,
+      "timestamp": "2026-01-24T01:05:23.132089",
+      "model_used": "DistilRoBERTa",
+      "status": "success",
+      "processing_time_ms": 362.83,
+      "top_3_categories": [
+        [
+          "HEALTH/MEDICAL",
+          0.5264521241188049
+        ],
+        [
+          "FINANCIAL",
+          0.4143347442150116
+        ],
+        [
+          "GENERAL/OTHER",
+          0.4015660881996155
+        ]
+      ],
+      "text_preview": "{\n \"kind\": \"youtube#videoCategoryListResponse\",\n \"etag\": \"\\\"XI7nbFXulYBIpL0ayR_gDh3eu1k/1v2mrzYSYG6onNLt2qTj13hkQZk\\\"\",\n \"items\": [\n  {\n   \"kind\": \"youtube#videoCategory\",\n   \"etag\": \"\\\"XI7nbFXulYBIpL...",
+      "was_truncated": true,
+      "text_length": 3000,
+      "error": null,
+      "extracted_text_length": 3000
+    },
+    {
+      "file_path": "/Users/benjaminfalkenburg/Documents/Shannova/Beta/kaggle_test_results/youtube-new/JP_category_id.json",
+      "file_name": "JP_category_id.json",
+      "file_size_bytes": 8225,
+      "file_size_mb": 0.01,
+      "file_type": "text",
+      "content_category": "HEALTH/MEDICAL",
+      "confidence": 0.5264521241188049,
+      "classification_time_ms": 420.77,
+      "total_processing_time_ms": 421.25,
+      "timestamp": "2026-01-24T01:05:23.553705",
+      "model_used": "DistilRoBERTa",
+      "status": "success",
+      "processing_time_ms": 420.5,
+      "top_3_categories": [
+        [
+          "HEALTH/MEDICAL",
+          0.5264521241188049
+        ],
+        [
+          "FINANCIAL",
+          0.4143347442150116
+        ],
+        [
+          "GENERAL/OTHER",
+          0.4015660881996155
+        ]
+      ],
+      "text_preview": "{\n \"kind\": \"youtube#videoCategoryListResponse\",\n \"etag\": \"\\\"XI7nbFXulYBIpL0ayR_gDh3eu1k/1v2mrzYSYG6onNLt2qTj13hkQZk\\\"\",\n \"items\": [\n  {\n   \"kind\": \"youtube#videoCategory\",\n   \"etag\": \"\\\"XI7nbFXulYBIpL...",
+      "was_truncated": true,
+      "text_length": 3000,
+      "error": null,
+      "extracted_text_length": 3000
+    },
+    {
+      "file_path": "/Users/benjaminfalkenburg/Documents/Shannova/Beta/kaggle_test_results/youtube-new/FR_category_id.json",
+      "file_name": "FR_category_id.json",
+      "file_size_bytes": 7911,
+      "file_size_mb": 0.01,
+      "file_type": "text",
+      "content_category": "HEALTH/MEDICAL",
+      "confidence": 0.44538894295692444,
+      "classification_time_ms": 475.08,
+      "total_processing_time_ms": 475.64,
+      "timestamp": "2026-01-24T01:05:24.029706",
+      "model_used": "DistilRoBERTa",
+      "status": "success",
+      "processing_time_ms": 474.83,
+      "top_3_categories": [
+        [
+          "HEALTH/MEDICAL",
+          0.44538894295692444
+        ],
+        [
+          "GENERAL/OTHER",
+          0.3808416724205017
+        ],
+        [
+          "FINANCIAL",
+          0.37688758969306946
+        ]
+      ],
+      "text_preview": "{\n \"kind\": \"youtube#videoCategoryListResponse\",\n \"etag\": \"\\\"ld9biNPKjAjgjV7EZ4EKeEGrhao/1v2mrzYSYG6onNLt2qTj13hkQZk\\\"\",\n \"items\": [\n  {\n   \"kind\": \"youtube#videoCategory\",\n   \"etag\": \"\\\"ld9biNPKjAjgjV...",
+      "was_truncated": true,
+      "text_length": 3000,
+      "error": null,
+      "extracted_text_length": 3000
+    }
+  ],
+  "timestamp": "2026-01-24T01:05:24.030931"
+}
