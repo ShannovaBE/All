@@ -1,0 +1,53 @@
+.hiw-flow-grid {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.hiw-step-card {
+  border-radius: 16px;
+  padding: 16px;
+  border: 1px solid rgba(18, 39, 74, 0.18);
+  background: #ffffff;
+  box-shadow: 0 16px 36px rgba(18, 39, 74, 0.12);
+}
+
+.hiw-step-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.hiw-step-num {
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  background: #12274a;
+  color: #ffffff;
+  font-weight: 800;
+}
+
+.hiw-step-title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #12274a;
+}
+
+.hiw-step-desc {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.85;
+  color: rgba(18, 39, 74, 0.72);
+}
+
+@media (max-width: 980px) {
+  .hiw-flow-grid {
+    grid-template-columns: 1fr;
+  }
+}
