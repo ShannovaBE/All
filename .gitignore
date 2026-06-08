@@ -1,0 +1,50 @@
+.DS_Store
+
+# Local secrets
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+**/kaggle.json
+**/*service-account*.json
+**/*key*.json
+
+# Python
+__pycache__/
+**/__pycache__/
+*.pyc
+.pytest_cache/
+venv/
+.venv/
+.venv_test/
+shannova_local.db
+backend/backend/users_store/
+backend/users_store/
+
+# Node / Next
+node_modules/
+.next/
+out/
+build/
+coverage/
+*.tsbuildinfo
+
+# Large generated artifacts
+*.zip
+*.log
+backend/Alpha/models/
+backend/Alpha/outputs/
+backend/Alpha/test_files/
+backend/Alpha/*.ipynb
+backend/Beta/models/
+backend/Beta/outputs/
+backend/Beta/test_files/
+backend/Beta/jay_test/
+backend/Beta/kaggle_test_results/
+backend/Beta/archive.zip
+backend/Beta/*.csv
+backend/Beta/*.ipynb
+backend/Beta/*.flattened.py
+backend/Gamma/*.ipynb
