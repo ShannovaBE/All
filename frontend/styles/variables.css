@@ -1,0 +1,9 @@
+:root {
+  --color-primary: #12274a;
+  --color-primary-dark: #0f2040;
+  --color-bg: #12274a;
+  --color-text: rgba(248, 250, 252, 0.92);
+  --color-success: #12274a;
+  --color-error: #ef4444;
+  --border-radius: 6px;
+}

@@ -1,0 +1,23 @@
+name: Retention sweep
+
+on:
+  schedule:
+    - cron: "17 2 * * *"
+  workflow_dispatch:
+
+jobs:
+  run-retention-sweep:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run production retention sweep
+        env:
+          SHANNOVA_RETENTION_URL: ${{ secrets.SHANNOVA_RETENTION_URL }}
+          SHANNOVA_RETENTION_ADMIN_USER_ID: ${{ secrets.SHANNOVA_RETENTION_ADMIN_USER_ID }}
+        run: |
+          test -n "$SHANNOVA_RETENTION_URL"
+          test -n "$SHANNOVA_RETENTION_ADMIN_USER_ID"
+          curl --fail --show-error --silent \
+            -X POST "$SHANNOVA_RETENTION_URL/admin/retention/run" \
+            -H "Content-Type: application/json" \
+            -H "X-User-Id: $SHANNOVA_RETENTION_ADMIN_USER_ID" \
+            --data '{"dry_run":false}'
