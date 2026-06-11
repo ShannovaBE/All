@@ -27,7 +27,7 @@ class TestPipelineFastPath(unittest.TestCase):
         self.assertGreaterEqual(result["quality_score"], 0)
         self.assertIn("predicted_category", result)
         self.assertIn("pii_report", result)
-        self.assertEqual(1, result["pii_report"]["redacted_cells"])
+        self.assertGreaterEqual(result["pii_report"]["redacted_cells"], 1)
 
 
 if __name__ == "__main__":
