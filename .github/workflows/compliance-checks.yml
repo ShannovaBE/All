@@ -1,0 +1,61 @@
+name: Compliance checks
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  backend-frontend-security:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+
+      - name: Secret scan
+        run: sh scripts/secret_scan.sh
+
+      - name: Install backend dependencies
+        run: python -m pip install -r backend/requirements.txt
+
+      - name: Compile backend
+        working-directory: backend
+        run: python -m compileall -q audit.py main.py models.py db.py auth reviews metadata users tests retention.py
+
+      - name: Run backend tests
+        working-directory: backend
+        run: python -m unittest discover -s tests -v
+
+      - name: Verify database migrations
+        working-directory: backend
+        run: |
+          rm -f ci_migration_check.db
+          DATABASE_URL=sqlite:///./ci_migration_check.db alembic upgrade head
+          rm -f ci_migration_check.db
+
+      - name: Audit Python dependencies
+        run: |
+          python -m pip install pip-audit
+          grep -v '^torch --index-url ' backend/requirements.txt > /tmp/backend-requirements-audit.txt
+          echo 'torch' >> /tmp/backend-requirements-audit.txt
+          python -m pip_audit -r /tmp/backend-requirements-audit.txt --strict
+
+      - name: Install frontend dependencies
+        working-directory: frontend
+        run: npm ci
+
+      - name: Lint frontend
+        working-directory: frontend
+        run: npm run lint
+
+      - name: Audit production frontend dependencies
+        working-directory: frontend
+        run: npm audit --omit=dev --audit-level=high

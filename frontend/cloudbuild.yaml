@@ -1,0 +1,15 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args:
+  - 'build'
+  - '--build-arg'
+  - 'NEXT_PUBLIC_API_URL=https://shannova-backend-604156427652.europe-west1.run.app'
+  - '-t'
+  - 'europe-west1-docker.pkg.dev/sublime-iridium-489000-e3/shannova-repo/frontend'
+  - '.'
+- name: 'gcr.io/cloud-builders/docker'
+  args:
+  - 'push'
+  - 'europe-west1-docker.pkg.dev/sublime-iridium-489000-e3/shannova-repo/frontend'
+images:
+- 'europe-west1-docker.pkg.dev/sublime-iridium-489000-e3/shannova-repo/frontend'
