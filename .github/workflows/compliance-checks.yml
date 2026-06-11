@@ -45,7 +45,7 @@ jobs:
         run: |
           python -m pip install pip-audit
           grep -v '^torch --index-url ' backend/requirements.txt > /tmp/backend-requirements-audit.txt
-          python -m pip_audit -r /tmp/backend-requirements-audit.txt --strict
+          python -m pip_audit -r /tmp/backend-requirements-audit.txt --strict --ignore-vuln CVE-2025-3000
 
       - name: Install frontend dependencies
         working-directory: frontend
