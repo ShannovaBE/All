@@ -277,7 +277,7 @@ Validation after this pass:
 - `npm run lint` in `frontend/`
 - `npm audit --omit=dev --audit-level=high` in `frontend`
 - `pip-audit -r` against an audit-safe backend requirements file
-  - No known Python dependency vulnerabilities found
+  - No known Python dependency vulnerabilities found outside the custom-index Torch CPU wheel line
 
 Remaining production-only action:
 
